@@ -42,10 +42,6 @@ export class DoctorsSuggestionsLibService {
           consultationRequest,
         );
 
-      if (doctors.length == 0) {
-        // retrive on closest cities doctors
-      }
-
       const filterHiddenDoctors =
         await this.patientHiddenDoctorsService.filterHiddenDoctorsProfiles({
           patientId: user.id,
