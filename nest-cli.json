@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "plugins": ["@nestjs/swagger"],
+    "deleteOutDir": true
+  },
+  "projects": {
+    "common": {
+      "type": "library",
+      "root": "libs/common-lib",
+      "entryFile": "index",
+      "sourceRoot": "libs/common-lib/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/common-lib/tsconfig.lib.json"
+      }
+    },
+    "cache": {
+      "type": "library",
+      "root": "libs/cache-lib",
+      "entryFile": "index",
+      "sourceRoot": "libs/cache-lib/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/cache-lib/tsconfig.lib.json"
+      }
+    },
+    "utils": {
+      "type": "library",
+      "root": "libs/utils-lib",
+      "entryFile": "index",
+      "sourceRoot": "libs/utils-lib/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/utils-lib/tsconfig.lib.json"
+      }
+    },
+    "auth": {
+      "type": "library",
+      "root": "libs/auth-lib",
+      "entryFile": "index",
+      "sourceRoot": "libs/auth-lib/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/auth-lib/tsconfig.lib.json"
+      }
+    },
+    "users": {
+      "type": "library",
+      "root": "libs/users-lib",
+      "entryFile": "index",
+      "sourceRoot": "libs/users-lib/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/users-lib/tsconfig.lib.json"
+      }
+    },
+    "config": {
+      "type": "library",
+      "root": "libs/config-lib",
+      "entryFile": "index",
+      "sourceRoot": "libs/config-lib/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/config-lib/tsconfig.lib.json"
+      }
+    },
+    "countries-lib": {
+      "type": "library",
+      "root": "libs/countries-lib",
+      "entryFile": "index",
+      "sourceRoot": "libs/countries-lib/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/countries-lib/tsconfig.lib.json"
+      }
+    },
+    "cities-lib": {
+      "type": "library",
+      "root": "libs/cities-lib",
+      "entryFile": "index",
+      "sourceRoot": "libs/cities-lib/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/cities-lib/tsconfig.lib.json"
+      }
+    },
+    "specializations-lib": {
+      "type": "library",
+      "root": "libs/specializations-lib",
+      "entryFile": "index",
+      "sourceRoot": "libs/specializations-lib/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/specializations-lib/tsconfig.lib.json"
+      }
+    },
+    "patients-profiles-lib": {
+      "type": "library",
+      "root": "libs/patients-profiles-lib",
+      "entryFile": "index",
+      "sourceRoot": "libs/patients-profiles-lib/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/patients-profiles-lib/tsconfig.lib.json"
+      }
+    },
+    "doctors-profiles-lib": {
+      "type": "library",
+      "root": "libs/doctors-profiles-lib",
+      "entryFile": "index",
+      "sourceRoot": "libs/doctors-profiles-lib/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/doctors-profiles-lib/tsconfig.lib.json"
+      }
+    },
+    "consultations-requests-lib": {
+      "type": "library",
+      "root": "libs/consultations-requests-lib",
+      "entryFile": "index",
+      "sourceRoot": "libs/consultations-requests-lib/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/consultations-requests-lib/tsconfig.lib.json"
+      }
+    },
+    "patient-hidden-doctors-lib": {
+      "type": "library",
+      "root": "libs/patient-hidden-doctors-lib",
+      "entryFile": "index",
+      "sourceRoot": "libs/patient-hidden-doctors-lib/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/patient-hidden-doctors-lib/tsconfig.lib.json"
+      }
+    },
+    "doctors-suggestions": {
+      "type": "library",
+      "root": "libs/doctors-suggestions-lib",
+      "entryFile": "index",
+      "sourceRoot": "libs/doctors-suggestions-lib/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/doctors-suggestions-lib/tsconfig.lib.json"
+      }
+    }
+  }
+}

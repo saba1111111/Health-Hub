@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "libs/common-lib": ["libs/common-lib/src"],
+      "libs/common-lib/*": ["libs/common-lib/src/*"],
+      "libs/cache-lib": ["libs/cache-lib/src"],
+      "libs/cache-lib/*": ["libs/cache-lib/src/*"],
+      "libs/utils-lib": ["libs/utils-lib/src"],
+      "libs/utils-lib/*": ["libs/utils-lib/src/*"],
+      "libs/auth-lib": ["libs/auth-lib/src"],
+      "libs/auth-lib/*": ["libs/auth-lib/src/*"],
+      "libs/users-lib": ["libs/users-lib/src"],
+      "libs/users-lib/*": ["libs/users-lib/src/*"],
+      "libs/config-lib": ["libs/config-lib/src"],
+      "libs/config-lib/*": ["libs/config-lib/src/*"],
+      "libs/countries-lib": ["libs/countries-lib/src"],
+      "libs/countries-lib/*": ["libs/countries-lib/src/*"],
+      "libs/cities-lib": ["libs/cities-lib/src"],
+      "libs/cities-lib/*": ["libs/cities-lib/src/*"],
+      "libs/specializations-lib": ["libs/specializations-lib/src"],
+      "libs/specializations-lib/*": ["libs/specializations-lib/src/*"],
+      "libs/patients-profiles-lib": ["libs/patients-profiles-lib/src"],
+      "libs/patients-profiles-lib/*": ["libs/patients-profiles-lib/src/*"],
+      "libs/doctors-profiles-lib": ["libs/doctors-profiles-lib/src"],
+      "libs/doctors-profiles-lib/*": ["libs/doctors-profiles-lib/src/*"],
+      "libs/consultations-requests-lib": [
+        "libs/consultations-requests-lib/src"
+      ],
+      "libs/consultations-requests-lib/*": [
+        "libs/consultations-requests-lib/src/*"
+      ],
+      "libs/patient-hidden-doctors-lib": [
+        "libs/patient-hidden-doctors-lib/src"
+      ],
+      "libs/patient-hidden-doctors-lib/*": [
+        "libs/patient-hidden-doctors-lib/src/*"
+      ],
+      "libs/doctors-suggestions-lib": ["libs/doctors-suggestions-lib/src"],
+      "libs/doctors-suggestions-lib/*": ["libs/doctors-suggestions-lib/src/*"]
+    }
+  }
+}
