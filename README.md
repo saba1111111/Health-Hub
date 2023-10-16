@@ -1,73 +1,89 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Health Hub
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Health Hub is a project designed to help patients find appropriate doctors and provide a platform for doctors to offer their services. This README provides an overview of the project, its features, and how to get started.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Table of Contents
+
+- [Description](#description)
+- [How It Works](#how-it-works)
+- [Technologies Used](#technologies-used)
+- [API Documentation](#api-documentation)
+- [Database Design](#database-design)
+- [Environment Variables](#environment-variables)
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Health Hub is a platform where patients and doctors can connect. It simplifies the process of finding the right doctor for patients and offers a space for doctors to reach out to potential patients. Users can register and create profiles to access the platform's features.
 
-## Installation
+## How It Works
 
-```bash
-$ npm install
-```
+1. **Registration and Profile Creation**:
 
-## Running the app
+   - Both doctors and patients must register as users.
+   - After registration, they need to create profiles, which are essential for platform access.
 
-```bash
-# development
-$ npm run start
+2. **Consultation Requests**:
 
-# watch mode
-$ npm run start:dev
+   - Patients can create consultation requests, specifying their desired doctor's specialization and requirements.
+   - These requests are made available to doctors for review.
 
-# production mode
-$ npm run start:prod
-```
+3. **Doctor Suggestions**:
 
-## Test
+   - Doctors can view patient consultation requests and provide suggestions based on their expertise and availability.
 
-```bash
-# unit tests
-$ npm run test
+4. **Hiding Doctors**:
+   - Patients have the option to hide certain doctors if they do not wish to receive suggestions from them.
 
-# e2e tests
-$ npm run test:e2e
+## Technologies Used
 
-# test coverage
-$ npm run test:cov
-```
+The Health Hub project is built using the following technologies:
 
-## Support
+- Nest.js
+- PostgreSQL
+- Redis
+- TypeORM
+- Docker
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+## API Documentation
 
-## Stay in touch
+To view the list of available APIs and their specifications, follow these steps:
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+1. Run the server.
+2. Open your browser and navigate to [http://localhost:8080/api](http://localhost:8080/api).
 
-## License
+The API documentation is automatically generated using Swagger definitions written as comments in the route files.
 
-Nest is [MIT licensed](LICENSE).
+## Database Design
+
+For a visual representation of the database schema, you can refer to the [database diagram](https://dbdiagram.io/d/651ee04cffbf5169f01d9d58).
+
+## Environment Variables
+
+You can customize the project's environment by modifying the values in the `.env.example` file. Here are some key environment variables:
+
+### Postgres
+
+- `POSTGRES_HOST`: PostgreSQL database host
+- `POSTGRES_PORT`: PostgreSQL database port
+- `POSTGRES_USER`: PostgreSQL database username
+- `POSTGRES_PASSWORD`: PostgreSQL database password
+- `POSTGRES_DB`: PostgreSQL database name
+
+### Redis
+
+- `REDIS_PORT`: Redis database port
+- `REDIS_HOST`: Redis database host
+
+### Tokens
+
+- `ACCESS_TOKEN_SECRET`: Secret key for access tokens
+- `ACCESS_TOKEN_EXPIRATION_TIME`: Access token expiration time in seconds
+- `REFRESH_TOKEN_SECRET`: Secret key for refresh tokens
+- `REFRESH_TOKEN_EXPIRATION_TIME`: Refresh token expiration time in seconds
+- `PASSWORD_RESET_SECRET`: Secret key for password reset
+- `PASSWORD_RESET_EXPIRATION_TIME`: Password reset token expiration time in seconds
+
+### Email Account
+
+- `EMAIL`: Email account for notifications
+- `EMAIL_PASSWORD`: Password for the email account
