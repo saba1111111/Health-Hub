@@ -25,14 +25,12 @@ Health Hub is a platform where patients and doctors can connect. It simplifies t
 2. **Consultation Requests**:
 
    - Patients can create consultation requests, specifying their desired doctor's specialization and requirements.
-   - These requests are made available to doctors for review.
+   - Patients have the option to hide certain doctors if they do not wish to receive suggestions from them.
 
 3. **Doctor Suggestions**:
 
-   - Doctors can view patient consultation requests and provide suggestions based on their expertise and availability.
+   - Based on the patients requirments list of doctors, suggestions are generated.
 
-4. **Hiding Doctors**:
-   - Patients have the option to hide certain doctors if they do not wish to receive suggestions from them.
 
 ## Technologies Used
 
